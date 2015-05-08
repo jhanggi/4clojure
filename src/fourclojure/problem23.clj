@@ -1,3 +1,5 @@
+;; Reverse a sequence
+
 (ns fourclojure.problem23)
 
 (defn rever [input]

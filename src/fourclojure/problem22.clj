@@ -1,3 +1,5 @@
+;; Count a sequence
+
 (ns fourclojure.problem22)
 
 (defn cnt [arr]

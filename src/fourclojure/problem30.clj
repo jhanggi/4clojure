@@ -1,3 +1,5 @@
+;; Pack a sequence
+
 (ns fourclojure.problem32
   (:require [clojure.test :refer :all]))
 

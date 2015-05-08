@@ -1,4 +1,6 @@
-(ns fourclojure.problem32
+;; Drop every nth element
+
+(ns fourclojure.problem41
   (:require [clojure.test :refer :all]))
 
 (defn __ [arr n]

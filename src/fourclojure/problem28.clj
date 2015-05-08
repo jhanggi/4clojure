@@ -1,4 +1,5 @@
-;; incomplete
+;; Flatten a sequence
+;; TODO incomplete
 (ns fourclojure.problem28)
 
 (defn my-flatten [arr]
