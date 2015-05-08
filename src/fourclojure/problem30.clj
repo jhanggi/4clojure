@@ -1,15 +1,17 @@
-;; Pack a sequence
+;; Compress a sequence
 
-(ns fourclojure.problem32
+(ns fourclojure.problem30
   (:require [clojure.test :refer :all]))
 
 (defn __ [input]
-  (partition-by identity input)
+  (map first (partition-by identity input))
 )
 
+(println (apply str (__ "Leeeeeerrroyyy")))
+
 (are [x y] (= x y)
-  (__ [1 1 2 1 1 1 3 3]) '((1 1) (2) (1 1 1) (3 3))
-  (__ [:a :a :b :b :c]) '((:a :a) (:b :b) (:c))
-  (__ [[1 2] [1 2] [3 4]]) '(([1 2] [1 2]) ([3 4]))
+  (__ [1 1 2 3 3 2 2 3]) '(1 2 3 2 3)
+  (__ [[1 2] [1 2] [3 4] [1 2]]) '([1 2] [3 4] [1 2])
+  (__ (apply str (__ "Leeeeeerrroyyy"))) "Leroy"
 )
 
