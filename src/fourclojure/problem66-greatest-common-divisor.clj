@@ -27,6 +27,14 @@
   )
 )
 
+;; Eucid's algorithm. Implemented during problem 100 (GCD)
+(defn __ [a b]
+  (if (zero? b)
+    a
+    (recur b (mod a b))
+  )
+)
+
 (is (divisor? 10 5))
 (is (not (divisor? 10 6)))
 
